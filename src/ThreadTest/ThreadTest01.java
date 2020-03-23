@@ -13,16 +13,23 @@ public class ThreadTest01 {
 //        thread.start();
 
 //通过new匿名对象实现
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i=0;i<20;i++){
-                    System.out.println("分支线程" + i);
-                }
-            }
-        });
+//        Thread thread1 = new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i=0;i<20;i++){
+//                    System.out.println("分支线程" + i);
+//                }
+//            }
+//        });
+//        thread1.start();
 
-        thread1.start();
+        /**
+         * 通过lambda实现线程
+         */
+//        new Thread( () -> System.out.println(Thread.currentThread().getName()+ " ")).start();
+//        new Thread( () -> {
+//            for (int i=0;i<20;i++)System.out.println("分线程" + i);
+//        }).start();
 
         for (int i=0;i<20;i++){
             System.out.println("主线程" + i);

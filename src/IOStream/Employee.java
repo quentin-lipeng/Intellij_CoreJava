@@ -6,7 +6,8 @@ import java.time.LocalDate;
 public class Employee
         implements Serializable
 {
-   public static final long Serializable = 312L;
+
+   private static final long serialVersionUID = 150459101098289363L;
    private String name;
    private double salary;
    private LocalDate hireDay;
