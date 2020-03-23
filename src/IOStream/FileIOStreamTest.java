@@ -22,20 +22,28 @@ public class FileIOStreamTest {
 //                    break;
 //                }
 //            }
-            byte[] bytes = new byte[input.available()];
-            input.read(bytes);
-            for (byte aByte : bytes) {
-                System.out.println("aByte = " + aByte);
-           }
-            if (input != null) {
-                input.close();
+            int readData = 0;
+            while ( (readData=input.read()) != -1 ){
+                System.out.println(readData);
             }
 
-            FileOutputStream fileOutputStream = new FileOutputStream(
-                    new File("src\\FileOnly\\File1.txt"));
-            fileOutputStream.write(bytes);
-            fileOutputStream.flush();
-            fileOutputStream.close();
+//            byte[] bytes = new byte[input.available()];
+//            input.read(bytes);
+//            for (byte aByte : bytes) {
+//                System.out.println("aByte = " + aByte);
+//           }
+//            if (input != null) {
+//                input.close();
+//            }
+//
+//            FileOutputStream fileOutputStream = new FileOutputStream(
+//                    new File("src\\FileOnly\\File1.txt"));
+//            fileOutputStream.write(bytes);
+//            if (fileOutputStream != null) {
+//                fileOutputStream.flush();
+//                fileOutputStream.close();
+//            }
+
         } catch (IOException e) {
             e.printStackTrace();
         }
