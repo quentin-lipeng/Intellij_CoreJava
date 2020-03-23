@@ -5,10 +5,11 @@ import java.io.*;
 public class FileIOStreamTest {
     public static void main(String[] args) {
         File file = new File("src\\FileOnly\\File.txt");
+        FileInputStream input = null;
 
         try {
-            FileInputStream input = new FileInputStream(file);
-
+            input = new FileInputStream(file);
+            int length = input.available();
             /**
              * ps如果使用while(input.read()!=-1)
              * 则会因为多次调用read方法使得会读不到完整数据
@@ -22,9 +23,15 @@ public class FileIOStreamTest {
 //                    break;
 //                }
 //            }
-            int readData = 0;
-            while ( (readData=input.read()) != -1 ){
-                System.out.println(readData);
+//            int readData = 0;
+//            while ( (readData=input.read()) != -1 ){
+//                System.out.println(readData);
+//            }
+
+            byte[] byteData = new byte[length];
+            int intData = 0;
+            while ( (intData = input.read(byteData)) != -1){
+                System.out.println(new String(byteData, 0 ,intData));
             }
 
 //            byte[] bytes = new byte[input.available()];
