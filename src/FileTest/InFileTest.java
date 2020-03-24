@@ -21,7 +21,7 @@ public class InFileTest {
             byte[] bytes1 = new byte[fileInputStream.available()];
             fileInputStream.read(bytes1);
 
-            String str = new String(bytes);
+            String str = new String(bytes1);
             System.out.println(str);
 
             if (fileInputStream != null) {
