@@ -13,7 +13,7 @@ public class InFileTest {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(Paths.get("src\\FileOnly\\File.txt"),"UTF-8");
         String file = in.next();
-        Path path = Paths.get("src\\FileOnly\\File.txt");
+        Path path = Paths.get("src/FileOnly/File.txt");
         byte[] bytes = Files.readAllBytes(path);
 
 
