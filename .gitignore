@@ -1,6 +1,7 @@
 # Project exclude paths
 /out/
 /.idea/*
-/CoreJava.iml
+CoreJava.iml
 /.idea/.gitignore
 /coreJavaCode/
+/coreJavaCode/.idea/.gitignore
