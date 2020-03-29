@@ -12,7 +12,7 @@ public class PropertiesTest {
              * 配置文件内容规范：
              * key=value
             */
-            FileReader fr = new FileReader("src\\com.CoreJava.FileOnly\\information.properties");
+            FileReader fr = new FileReader("src\\com\\CoreJava\\FileOnly\\information.properties");
             Properties pro = new Properties();
             pro.load(fr);
             System.out.println(pro.getProperty("name"));

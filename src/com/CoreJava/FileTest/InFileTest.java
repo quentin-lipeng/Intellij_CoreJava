@@ -9,24 +9,23 @@ import java.util.Scanner;
 
 public class InFileTest {
     public static void main(String[] args) throws IOException {
-        Scanner in = new Scanner(Paths.get("src\\com.CoreJava.FileOnly\\File.txt"),"UTF-8");
-        String file = in.next();
-        Path path = Paths.get("src/com.CoreJava.FileOnly/File.txt");
+//        Scanner in = new Scanner(Paths.get("src\\com.CoreJava.FileOnly\\File.txt"),"UTF-8");
+//        String file = in.next();
+        Path path = Paths.get("src/com/CoreJava/FileOnly/File.txt");
         byte[] bytes = Files.readAllBytes(path);
 
-
-        try (FileInputStream fileInputStream = new FileInputStream(path.toFile())){
-            byte[] bytes1 = new byte[fileInputStream.available()];
-            fileInputStream.read(bytes1);
-
-            String str = new String(bytes1);
-            System.out.println(str);
-
-            if (fileInputStream != null) {
-                fileInputStream.close();
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+//        try (FileInputStream fileInputStream = new FileInputStream(path.toFile())){
+//            byte[] bytes1 = new byte[fileInputStream.available()];
+//            fileInputStream.read(bytes1);
+//
+//            String str = new String(bytes1);
+//            System.out.println(str);
+//
+//            if (fileInputStream != null) {
+//                fileInputStream.close();
+//            }
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
     }
 }
