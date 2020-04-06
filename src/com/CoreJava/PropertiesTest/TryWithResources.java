@@ -10,7 +10,7 @@ import java.io.*;
 
 public class TryWithResources {
     public static void main(String[] args) {
-        File file = new File("src\\com\\CoreJava\\FileOnly\\File.txt");
+        File file = new File("src\\com\\CoreJava\\FileOnly\\file.txt");
 
 
         try (InputStream inputStream = new FileInputStream(file)){

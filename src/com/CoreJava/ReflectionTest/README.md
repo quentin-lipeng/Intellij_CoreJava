@@ -17,6 +17,12 @@ void setAccessible()
 - 使用getMethod()方法
 ## 4. 获取类名
 - getName()方法
+- 类名.class
+    多用于参数传递
+- Class.forName()
+    + 多用于配置文件
+- getClass()
+    + 多用于获取对象的字节码
 
 ## 5. 实用技巧
 - ClassLoader类

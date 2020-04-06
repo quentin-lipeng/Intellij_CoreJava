@@ -1,5 +1,7 @@
-package com.CoreJava.IOStream;
+package com.CoreJava.IOStream.ObjectIOStream;
 
+
+import com.CoreJava.IOStream.Employee;
 
 import java.io.*;
 
@@ -12,7 +14,7 @@ public class ObjectIOStream {
 //            Employee harry = new Employee("Harry" , 5000, 1989, 10, 1);
 //            Employee sara = new Employee("sara" , 7000, 1999, 9, 23);
 //
-//            objOut.writeObject(harry);
+//            objO  ut.writeObject(harry);
 //            objOut.writeObject(sara);
 //        } catch (IOException e) {
 //            e.printStackTrace();

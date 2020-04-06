@@ -1,10 +1,10 @@
-package com.CoreJava.IOStream;
+package com.CoreJava.IOStream.FileIOStream;
 
 import java.io.*;
 
 public class FileIOStreamTest {
     public static void main(String[] args) {
-        File file = new File("src\\com.CoreJava.FileOnly\\File.txt");
+        File file = new File("src\\com.CoreJava.FileOnly\\file.txt");
         FileInputStream input = null;
 
         try {

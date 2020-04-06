@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 public class InFileTest {
     public static void main(String[] args) throws IOException {
-//        Scanner in = new Scanner(Paths.get("src\\com.CoreJava.FileOnly\\File.txt"),"UTF-8");
+//        Scanner in = new Scanner(Paths.get("src\\com.CoreJava.FileOnly\\file.txt"),"UTF-8");
 //        String file = in.next();
-        Path path = Paths.get("src/com/CoreJava/FileOnly/File.txt");
+        Path path = Paths.get("src/com/CoreJava/FileOnly/file.txt");
         byte[] bytes = Files.readAllBytes(path);
 
 //        try (FileInputStream fileInputStream = new FileInputStream(path.toFile())){
