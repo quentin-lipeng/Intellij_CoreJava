@@ -14,8 +14,9 @@ public class IteratorTest {
     //使用Stream
 //    collection.parallelStream().filter(b -> !b.equals(2)).forEach(System.out::println);
 
-    collection.stream().filter(s -> !s.equals(2)).forEach(System.out::println);
+//    collection.stream().filter(s -> !s.equals(2)).forEach(System.out::println);
     Iterator<Integer> iterator = collection.iterator();
+    while(iterator.hasNext()) System.out.println(iterator.next());
     //使用Iterator
 //    iterator.forEachRemaining(x -> System.out.println(x));
   }
