@@ -1,4 +1,4 @@
-package com.CoreJava.ThreadTest;
+package com.CoreJava.ReflectionTest;
 
 import com.CoreJava.ReflectionTest.Person;
 

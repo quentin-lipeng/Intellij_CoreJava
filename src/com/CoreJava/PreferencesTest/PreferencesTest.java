@@ -16,17 +16,17 @@ public class PreferencesTest {
 //        node = preferences.node("src\\com\\CoreJava\\PreferenceTest");
 
         File file = new File("src\\com\\CoreJava\\PreferenceTest.xml");
-//        System.out.println(node.get("name", "def"));
-        try (OutputStream outputStream = new FileOutputStream(file);){
-            node.put("name","quinlan");
-            node.exportNode(outputStream);
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (BackingStoreException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        System.out.println(node.get("name", "def"));
+//        try (OutputStream outputStream = new FileOutputStream(file);){
+//            node.put("name","quinlan");
+//            node.exportNode(outputStream);
+//
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (BackingStoreException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 }

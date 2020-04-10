@@ -1,7 +1,7 @@
 package com.CoreJava.ThreadTest;
 
 /**
- * 通过继承Thread实现线程
+ * 通过类继承Thread实现线程
  * 但不推荐 因为有局限性
  */
 public class ThreadTest2 {
