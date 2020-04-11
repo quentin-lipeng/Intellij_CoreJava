@@ -6,9 +6,8 @@ package com.CoreJava.ThreadTest;
 public class ThreadTest01 {
     public static void main(String[] args) {
 
-//        MyThread my = new MyThread();
-//        Thread thread = new Thread(my);
-//        thread.start();
+        Thread thread = new Thread(new MyThread1());
+        thread.start();
 
         for (int i = 0; i < 20; i++) {
             System.out.println("主线程" + i);
@@ -51,12 +50,12 @@ public class ThreadTest01 {
 }
 
 //  2. 通过新建类完成接口实现
-//class MyThread implements Runnable {
-//
-//    @Override
-//    public void run() {
-//        for (int i=0;i<20;i++){
-//            System.out.println("分支线程" + i);
-//        }
-//    }
-//}
+class MyThread1 implements Runnable {
+
+    @Override
+    public void run() {
+        for (int i=0;i<20;i++){
+            System.out.println("分支线程" + i);
+        }
+    }
+}
