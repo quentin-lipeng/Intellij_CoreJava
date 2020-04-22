@@ -13,10 +13,18 @@ public class BufferedInputStreamTest {
             inputStream = new FileInputStream("src\\com\\CoreJava\\FileOnly\\file.txt");
 
             bufferedInputStream = new BufferedInputStream(inputStream);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            int read = bufferedInputStream.read();
+            System.out.println(read);
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            if (bufferedInputStream != null) {
+                try {
+                    bufferedInputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 }

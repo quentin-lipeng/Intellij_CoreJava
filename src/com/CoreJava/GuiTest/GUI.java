@@ -53,7 +53,7 @@ public class GUI implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         String user = userText.getText();
-        String password = passwordText.getText();
+        String password = passwordText.getName();
         if (user.length()!=0 && password.length()!=0){
             success.setText("login successful!");
         }else{
